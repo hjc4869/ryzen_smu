@@ -324,6 +324,7 @@ int smu_resolve_cpu_class(struct pci_dev* dev) {
     else if (cpu_family == 0x1a) {
         switch (cpu_model) {
             case 0x24:
+            case 0x60:
             case 0x70:
                 g_smu.codename = CODENAME_STRIX;
                 break;
